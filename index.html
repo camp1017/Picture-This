@@ -15,9 +15,45 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <picture>
 
+      <source srcset="images/museum_square_1600px.jpg"
+                      media="(min-width: 1600px)" />
+
+      <source srcset="images/museum_square_1280px.jpg"
+                      media="(min-width: 1280px)" /> 
+
+      <source srcset="images/museum_square_960px.jpg"
+                      media="(min-width: 960px)" />
+
+      <source srcset="images/museum_960px.jpg,
+                      images/museum_960px_@2x.jpg 2x,
+                      images/museum_960px_@3x.jpg 3x" 
+                      media="(min-width: 720px)"/>
+
+      <source srcset="images/museum_720px.jpg,
+                      images/museum_720px_@2x.jpg 2x,
+                      images/museum_720px_@3x.jpg 3x"
+                      media="(min-width: 480px)" />
+
+      <source srcset="images/museum_480px.jpg,
+                      images/museum_480px_@2x.jpg 2x,
+                      images/museum_480px_@3x.jpg 3x"
+              media="(min-width:320px)" />
+
+      <source srcset="images/museum_320px.jpg,
+                        images/museum_320px_@2x.jpg 2x,
+                        images/museum_320px_@3x.jpg 3x"
+              media="(max-width: 319px)" /> 
+
+      <img class="orig-image"
+          src="images/museum.jpg" 
+          alt="placeholder">
+
+    </picture>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, non.</p>
   </header>
+
 </body>
 
 </html>
